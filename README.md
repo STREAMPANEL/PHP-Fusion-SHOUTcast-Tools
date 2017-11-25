@@ -1,7 +1,8 @@
-# PHP-Fusion-SHOUTcast-Tools
+# PHP-Fusion / SHOUTcast-Tools
 Integrates the SHOUTcast Tools Plattform in you PHP-Fusions Installation
 
 # English
+URL: https://www.shoutcast-tools.com/
 Installation
 
 - Upload the "shoutcast_tools" directory within your PHP-Fusion installation in the folder "/infusions".
@@ -15,7 +16,7 @@ Attention: Do not make any changes to the panel name / content.
 Control the name via the settings: "Infusions - SHOUTcast Tools"
 
 # German
-
+URL: https://www.shoutcast-tools.de/
 Installation
 
 - Upload des "shoutcast_tools" Verzeichnisses innerhalb Ihrer PHP-Fusion Installation im Ordner "/infusions".
