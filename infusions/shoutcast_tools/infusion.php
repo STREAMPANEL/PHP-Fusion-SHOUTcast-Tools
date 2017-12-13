@@ -63,7 +63,7 @@ $inf_mlt[ 1 ] = array(
 $insertnewtable1     = 'require_once INCLUDES . \"infusions_include.php\";$inf_settings = get_settings( \"shoutcast_tools\" );openside( $inf_settings[ \'streambox_name\' ] );echo \'<div align=\"center\">\';echo \'<script src=\"https://www.shoutcast-tools.de/shoutcast/streambox/get/\' . $inf_settings[ \'streambox_id\' ] . \'/\" type=\"text/javascript\"></script>\';echo \'</div>\';closeside();';
 $insertnewtable1     = mysql_real_escape_string($insertnewtable1);
 
-$insertnewtable2     = 'require_once INCLUDES . \"infusions_include.php\";$inf_settings = get_settings( \"shoutcast_tools\" );openside( $inf_settings[ \'tracklist_name\' ] );echo \'<div align=\"center\">\';echo \'<script src=\"https://www.shoutcast-tools.de/shoutcast/history/get/\' . $inf_settings[ \'tracklist_id\' ] . \'/\" type=\"text/javascript\"></script>\';echo \'</div>\';closeside();';
+$insertnewtable2     = 'require_once INCLUDES . \"infusions_include.php\";$inf_settings = get_settings( \"shoutcast_tools\" );opentable( $inf_settings[ \'tracklist_name\' ] );echo \'<div align=\"center\">\';echo \'<script src=\"https://www.shoutcast-tools.de/shoutcast/history/get/\' . $inf_settings[ \'tracklist_id\' ] . \'/\" type=\"text/javascript\"></script>\';echo \'</div>\';closetable();';
 $insertnewtable2     = mysql_real_escape_string($insertnewtable2);
 
 // Infuse insertations
