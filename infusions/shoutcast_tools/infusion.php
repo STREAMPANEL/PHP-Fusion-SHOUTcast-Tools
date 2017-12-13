@@ -41,7 +41,7 @@ if ( file_exists( INFUSIONS . "" . $inf_folder . "/locale/" . LANGUAGE . ".php" 
 // Infusion general information
 $inf_title = $locale[ 'SP_infusion_title' ];
 $inf_description = $locale[ 'SP_infusion_desc' ];
-$inf_version = "1.00";
+$inf_version = "1.01";
 $inf_developer = "scysys @STREAMPANEL";
 $inf_email = "scictools@streampanel.net";
 $inf_weburl = $locale[ 'SP_infusion_url' ];
