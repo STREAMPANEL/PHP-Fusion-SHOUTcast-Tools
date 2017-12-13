@@ -39,7 +39,7 @@ if ( file_exists( INFUSIONS . "" . $inf_folder . "/locale/" . $settings[ 'locale
 }
 
 // Check if User has rights to Access Admin Area
-if ( !checkrights( "ST" ) || !defined( "iAUTH" ) || $_GET[ 'aid' ] != iAUTH ) {
+if ( !checkrights( "SP" ) || !defined( "iAUTH" ) || $_GET[ 'aid' ] != iAUTH ) {
 	redirect( "../../index.php" );
 }
 
