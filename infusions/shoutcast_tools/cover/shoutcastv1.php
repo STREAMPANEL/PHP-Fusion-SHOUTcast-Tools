@@ -28,4 +28,8 @@
 | written permission from the original author(s).
 +--------------------------------------------------------*/
 
-require_once INFUSIONS . "" . $inf_folder . "/locale/English.php";
+/*
+ * SHOUTcast V1 is not so easy as the other parts.
+ * Also i was not sure it it was worth it overall
+ * No one should use v1 anymore!
+ */

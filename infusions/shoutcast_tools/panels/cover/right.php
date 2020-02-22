@@ -27,5 +27,45 @@
 | copyright header is strictly prohibited without
 | written permission from the original author(s).
 +--------------------------------------------------------*/
+if ( !defined( "IN_FUSION" ) ) {
+  die( "Access Denied" );
+}
 
-require_once INFUSIONS . "" . $inf_folder . "/locale/English.php";
+/*
+ * The folder in which the infusion resides.
+ */
+$inf_folder = "shoutcast_tools";
+
+/*
+ * Require infusions_db.php
+ */
+require INFUSIONS . "" . $inf_folder . "/infusion_db.php";
+
+/*
+ * Check if a locale file is available that match the selected locale.
+ */
+if ( file_exists( INFUSIONS . "" . $inf_folder . "/locale/" . LANGUAGE . ".php" ) ) {
+  // Load the locale file matching selection.
+  include INFUSIONS . "" . $inf_folder . "/locale/" . LANGUAGE . ".php";
+} else {
+  // Load the default locale file.
+  include INFUSIONS . "" . $inf_folder . "/locale/default.php";
+}
+
+/*
+ * Get Cover settings
+ */
+require_once INCLUDES . "infusions_include.php";
+$inf_settings = get_settings( "shoutcast_tools" );
+
+/*
+ * Cover
+ */
+openside( $inf_settings[ 'cover_name' ] );
+
+// Output can be changed here
+echo "<div align='center'>";
+require_once INFUSIONS . "" . $inf_folder . "/cover/get_cover.php";
+echo "</div>";
+
+closeside();

@@ -1,5 +1,5 @@
 SHOUTcast Tools:
-https://www.shoutcast-tools.com/
+https://en.shoutcast-tools.com/
 
 Installation
 

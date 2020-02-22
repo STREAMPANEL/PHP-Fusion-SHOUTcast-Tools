@@ -1,5 +1,5 @@
 SHOUTcast Tools:
-https://www.shoutcast-tools.de/
+https://de.shoutcast-tools.com/
 
 Installation
 
@@ -11,4 +11,4 @@ Installation
 - Aktivieren und verschieben Sie das gewünschte Panel an einer Position Ihrer Wahl.
 
 Achtung: Nehmen Sie keine Änderungen am Panel Namen / Content vor.
-Steuern Sie den Namen über die Einstellungen: "Infusions - SHOUTcast Tools"
+Steuern Sie den Panel Namen auschließlich über die Einstellungen: "Infusions - SHOUTcast Tools"
