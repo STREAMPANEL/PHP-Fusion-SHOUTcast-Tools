@@ -53,6 +53,12 @@ if ( file_exists( INFUSIONS . "" . $inf_folder . "/locale/" . LANGUAGE . ".php" 
 }
 
 /*
+ * Get Streambox settings
+ */
+require_once INCLUDES . "infusions_include.php";
+$inf_settings = get_settings( "shoutcast_tools" );
+
+/*
  * There seems to be no real funtion to receive the panel location in php-fusion 7.
  * So i need to get it with mysql
  *

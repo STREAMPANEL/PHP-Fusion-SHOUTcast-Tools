@@ -59,6 +59,12 @@ require_once INCLUDES . "infusions_include.php";
 $inf_settings = get_settings( "shoutcast_tools" );
 
 /*
+ * Get Cover settings
+ */
+require_once INCLUDES . "infusions_include.php";
+$inf_settings = get_settings( "shoutcast_tools" );
+
+/*
  * Cover
  */
 opentable( $inf_settings[ 'cover_name' ] );
