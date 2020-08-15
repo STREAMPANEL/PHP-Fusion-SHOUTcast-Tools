@@ -55,7 +55,7 @@ if ( $source[ 'yp_currently_playing' ] == "" ) {
 } else {
   $actualSongtitle = $source[ 'yp_currently_playing' ];
   $actualSongtitle2 = strtolower( trim( $actualSongtitle ) );
-  echo "<!-- Cover--><img src='https://www.shoutcast-tools.com/cached/cover/sp/$coverSize/" . base64_encode( $actualSongtitle2 ) . ".jpg' width='" . $inf_settings[ 'cover_size_custom_width' ] . "' height='" . $inf_settings[ 'cover_size_custom_height' ] . "' alt='" . $actualSongtitle . "' /><!-- Generate Covers that we dont know at this time--><iframe src='https://www.shoutcast-tools.com/external/api/cover/icecastkh/$coverSize.php?url=http://" . $inf_settings[ 'streamserver_ipaddress' ] . ":" . $inf_settings[ 'streamserver_port' ] . "' width='0px' height='0px' style='display:none;'></iframe>";
+  echo "<!-- Cover--><img src='https://cover.streampanel.net/cover-api/sp/track.php?title=". urlencode($actualSongtitle2) ."&size=medium&urlonly=yes' width='" . $inf_settings[ 'cover_size_custom_width' ] . "' height='" . $inf_settings[ 'cover_size_custom_height' ] . "' alt='" . $actualSongtitle . "' /><!-- Generate Covers that we dont know at this time--><iframe src='https://www.shoutcast-tools.com/external/api/cover/icecastkh/$coverSize.php?url=http://" . $inf_settings[ 'streamserver_ipaddress' ] . ":" . $inf_settings[ 'streamserver_port' ] . "' width='0px' height='0px' style='display:none;'></iframe>";
 }
 
 if ( $source[ 0 ][ 'yp_currently_playing' ] == "" ) {
@@ -63,7 +63,7 @@ if ( $source[ 0 ][ 'yp_currently_playing' ] == "" ) {
 } else {
   $actualSongtitle = $source[ 0 ][ 'yp_currently_playing' ];
   $actualSongtitle2 = strtolower( trim( $actualSongtitle ) );
-  echo "<!-- Cover--><img src='https://www.shoutcast-tools.com/cached/cover/sp/$coverSize/" . base64_encode( $actualSongtitle2 ) . ".jpg' width='" . $inf_settings[ 'cover_size_custom_width' ] . "' height='" . $inf_settings[ 'cover_size_custom_height' ] . "' alt='" . $actualSongtitle . "' /><!-- Generate Covers that we dont know at this time--><iframe src='https://www.shoutcast-tools.com/external/api/cover/icecastkh/$coverSize.php?url=http://" . $inf_settings[ 'streamserver_ipaddress' ] . ":" . $inf_settings[ 'streamserver_port' ] . "' width='0px' height='0px' style='display:none;'></iframe>";
+  echo "<!-- Cover--><img src='https://cover.streampanel.net/cover-api/sp/track.php?title=". urlencode($actualSongtitle2) ."&size=medium&urlonly=yes' width='" . $inf_settings[ 'cover_size_custom_width' ] . "' height='" . $inf_settings[ 'cover_size_custom_height' ] . "' alt='" . $actualSongtitle . "' /><!-- Generate Covers that we dont know at this time--><iframe src='https://www.shoutcast-tools.com/external/api/cover/icecastkh/$coverSize.php?url=http://" . $inf_settings[ 'streamserver_ipaddress' ] . ":" . $inf_settings[ 'streamserver_port' ] . "' width='0px' height='0px' style='display:none;'></iframe>";
 }
 
 if ( $source[ 1 ][ 'yp_currently_playing' ] == "" ) {
@@ -71,7 +71,7 @@ if ( $source[ 1 ][ 'yp_currently_playing' ] == "" ) {
 } else {
   $actualSongtitle = $source[ 1 ][ 'yp_currently_playing' ];
   $actualSongtitle2 = strtolower( trim( $actualSongtitle ) );
-  echo "<!-- Cover--><img src='https://www.shoutcast-tools.com/cached/cover/sp/$coverSize/" . base64_encode( $actualSongtitle2 ) . ".jpg' width='" . $inf_settings[ 'cover_size_custom_width' ] . "' height='" . $inf_settings[ 'cover_size_custom_height' ] . "' alt='" . $actualSongtitle . "' /><!-- Generate Covers that we dont know at this time--><iframe src='https://www.shoutcast-tools.com/external/api/cover/icecastkh/$coverSize.php?url=http://" . $inf_settings[ 'streamserver_ipaddress' ] . ":" . $inf_settings[ 'streamserver_port' ] . "' width='0px' height='0px' style='display:none;'></iframe>";
+  echo "<!-- Cover--><img src='https://cover.streampanel.net/cover-api/sp/track.php?title=". urlencode($actualSongtitle2) ."&size=medium&urlonly=yes' width='" . $inf_settings[ 'cover_size_custom_width' ] . "' height='" . $inf_settings[ 'cover_size_custom_height' ] . "' alt='" . $actualSongtitle . "' /><!-- Generate Covers that we dont know at this time--><iframe src='https://www.shoutcast-tools.com/external/api/cover/icecastkh/$coverSize.php?url=http://" . $inf_settings[ 'streamserver_ipaddress' ] . ":" . $inf_settings[ 'streamserver_port' ] . "' width='0px' height='0px' style='display:none;'></iframe>";
 }
 
 if ( $source[ 2 ][ 'yp_currently_playing' ] == "" ) {
@@ -79,5 +79,5 @@ if ( $source[ 2 ][ 'yp_currently_playing' ] == "" ) {
 } else {
   $actualSongtitle = $source[ 2 ][ 'yp_currently_playing' ];
   $actualSongtitle2 = strtolower( trim( $actualSongtitle ) );
-  echo "<!-- Cover--><img src='https://www.shoutcast-tools.com/cached/cover/sp/$coverSize/" . base64_encode( $actualSongtitle2 ) . ".jpg' width='" . $inf_settings[ 'cover_size_custom_width' ] . "' height='" . $inf_settings[ 'cover_size_custom_height' ] . "' alt='" . $actualSongtitle . "' /><!-- Generate Covers that we dont know at this time--><iframe src='https://www.shoutcast-tools.com/external/api/cover/icecastkh/$coverSize.php?url=http://" . $inf_settings[ 'streamserver_ipaddress' ] . ":" . $inf_settings[ 'streamserver_port' ] . "' width='0px' height='0px' style='display:none;'></iframe>";
+  echo "<!-- Cover--><img src='https://cover.streampanel.net/cover-api/sp/track.php?title=". urlencode($actualSongtitle2) ."&size=medium&urlonly=yes' width='" . $inf_settings[ 'cover_size_custom_width' ] . "' height='" . $inf_settings[ 'cover_size_custom_height' ] . "' alt='" . $actualSongtitle . "' /><!-- Generate Covers that we dont know at this time--><iframe src='https://www.shoutcast-tools.com/external/api/cover/icecastkh/$coverSize.php?url=http://" . $inf_settings[ 'streamserver_ipaddress' ] . ":" . $inf_settings[ 'streamserver_port' ] . "' width='0px' height='0px' style='display:none;'></iframe>";
 }
