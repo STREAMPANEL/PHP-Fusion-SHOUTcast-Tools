@@ -5,16 +5,10 @@
 | https://www.php-fusion.co.uk/
 +--------------------------------------------------------+
 +--------------------------------------------------------+
-| This Infusion was Developed by
-| STREAMPANEL
+| This Infusion was Developed by STREAMPANEL
 | Copyright (C) scysys
 | https://www.streampanel.net/
-| 
-| Tested with PHP-Fusion 7.x only!
-| 
-| Developed with PHP 7.2
-| Make sure everything is working when you use another version of php.
-| 
+|
 | For Support inquires contact me under: support@shoutcast-tools.com
 | Support is in English and German only!
 +--------------------------------------------------------+
@@ -28,92 +22,92 @@
 | written permission from the original author(s).
 +--------------------------------------------------------*/
 
-$locale[ 'SP_infusion_attention_1' ] = 'Nehmen Sie keine änderungen an diesen Panel vor. Außer Sie wissen was Sie tun!';
+$locale['sp_infusion_attention_1'] = 'Nehmen Sie keine Ã„nderungen an diesem Panel vor. Es sei denn, Sie wissen, was Sie tun!';
 
-$locale[ 'SP_infusion_title' ] = 'SHOUTcast Tools';
-$locale[ 'SP_infusion_desc' ] = 'Infusion zur Einbindung der SHOUTcast Tools innerhalb Ihrer PHP-Fusion installation.';
-$locale[ 'SP_infusion_admin_nav_1' ] = 'SHOUTcast Tools';
-$locale[ 'SP_infusion_url' ] = 'https://de.shoutcast-tools.com/';
-$locale[ 'SP_infusion_url_premium' ] = 'https://de.shoutcast-tools.com/premiumstatus/';
-$locale[ 'SP_infusion_submit' ] = 'Speichern';
-$locale[ 'SP_infusion_footer' ] = 'Zur Deaktivierung etwaiger Werbeverweise gibt es den Premiumstatus bereits ab 0.99 € im Monat.';
+$locale['sp_infusion_title'] = 'Shoutcast Tools';
+$locale['sp_infusion_desc'] = 'Infusion zur Integration der Shoutcast-Tools in Ihre PHP Fusion-Installation.';
+$locale['sp_infusion_admin_nav_1'] = 'Shoutcast-Tools';
+$locale['sp_infusion_url'] = 'https://de.shoutcast-tools.com/';
+$locale['sp_infusion_url_premium'] = 'https://de.shoutcast-tools.com/premiumstatus/';
+$locale['sp_infusion_submit'] = 'Speichern';
+$locale['sp_infusion_footer'] = 'Um jegliche Werbeverweise zu deaktivieren, steht der Premium-Status ab â‚¬0,99 pro Monat zur VerfÃ¼gung.';
 
-$locale[ 'SP_infusion_yes' ] = 'Ja';
-$locale[ 'SP_infusion_no' ] = 'Nein';
+$locale['sp_infusion_yes'] = 'Ja';
+$locale['sp_infusion_no'] = 'Nein';
 
-$locale[ 'SP_infusion_panel_1_name' ] = 'ST: Streambox';
-$locale[ 'SP_infusion_panel_2_name' ] = 'ST: Tracklist';
-$locale[ 'SP_infusion_panel_3_name' ] = 'ST: Cover';
+$locale['sp_infusion_panel_1_name'] = 'ST: Streambox';
+$locale['sp_infusion_panel_2_name'] = 'ST: Tracklist';
+$locale['sp_infusion_panel_3_name'] = 'ST: Cover';
 
-$locale[ 'SP_infusion_settings_head_1' ] = 'Streambox: Einstellungen';
-$locale[ 'SP_infusion_settings_head_1_desc' ] = '<p>Zu Informationen zu den Streamboxen klicke <a href="https://de.shoutcast-tools.com/shoutcast-streambox/" target="_blank">hier</a>. Zur Verwaltung der Streamboxen klicke <a href="https://www.shoutcast-tools.de/shoutcast/my/streambox/" target="_blank">hier</a>.</p>';
-$locale[ 'SP_infusion_settings_head_2' ] = 'Tracklist: Einstellungen';
-$locale[ 'SP_infusion_settings_head_2_desc' ] = '<p>Zu Informationen zur Tracklist klicke <a href=\"https://de.shoutcast-tools.com/shoutcast-tracklist/\" target=\"_blank\">hier</a>. Zur Verwaltung der Tracklisten klicke <a href=\"https://www.shoutcast-tools.de/shoutcast/my/history/\" target=\"_blank\">hier</a>.</p>';
-$locale[ 'SP_infusion_settings_head_3' ] = 'Streamserver Einstellungen';
-$locale[ 'SP_infusion_settings_head_3_desc' ] = 'Tragen Sie die Daten Ihres Streamserver ein um weitere Funktionen innerhalb der Infusion freizuschalten. Die Angabe des Streamservers ist für die Streambox und der Tracklist nicht nötig.';
-$locale[ 'SP_infusion_settings_head_4' ] = 'Streambox: Vorschau';
-$locale[ 'SP_infusion_settings_head_5' ] = 'Tracklist: Vorschau';
-$locale[ 'SP_infusion_settings_head_6' ] = 'Streambox: Anleitung';
-$locale[ 'SP_infusion_settings_head_7' ] = 'Tracklist: Anleitung';
-$locale[ 'SP_infusion_settings_head_8' ] = 'Cover: Einstellungen';
-$locale[ 'SP_infusion_settings_head_8_desc' ] = 'Die SHOUTcast Tools Cover stehen allen Nutzer kostenfrei zur Verfügung.';
-$locale[ 'SP_infusion_settings_head_9' ] = 'Cover: Vorschau';
-$locale[ 'SP_infusion_settings_head_10' ] = 'Cover: Anleitung';
-$locale[ 'SP_infusion_settings_saved' ] = 'Einstellungen wurden erfolgreich gespeichert!';
-$locale[ 'SP_infusion_settings_1' ] = 'Panel Name';
-$locale[ 'SP_infusion_settings_1_desc' ] = 'Der Name des Streambox Panels wie es auf der Frontseite erscheint.';
-$locale[ 'SP_infusion_settings_2' ] = 'Streambox ID';
-$locale[ 'SP_infusion_settings_2_desc' ] = 'Die Streambox ID';
-$locale[ 'SP_infusion_settings_3' ] = 'Panel Name';
-$locale[ 'SP_infusion_settings_3_desc' ] = 'Der Name des History Panels wie es auf der Frontseite erscheint.';
-$locale[ 'SP_infusion_settings_4' ] = 'Tracklist ID';
-$locale[ 'SP_infusion_settings_4_desc' ] = 'Die Tracklist ID';
-$locale[ 'SP_infusion_settings_5' ] = 'Typ';
-$locale[ 'SP_infusion_settings_5_desc' ] = 'Wählen Sie den Streamserver Typ';
-$locale[ 'SP_infusion_settings_6' ] = 'IP-Adresse';
-$locale[ 'SP_infusion_settings_6_desc' ] = 'Tragen Sie die IP-Adresse Ihres Streamservers ein.';
-$locale[ 'SP_infusion_settings_7' ] = 'Port';
-$locale[ 'SP_infusion_settings_7_desc' ] = 'Tragen Sie den Port Ihres Streamservers ein.';
-$locale[ 'SP_infusion_settings_8' ] = 'SID';
-$locale[ 'SP_infusion_settings_8_desc' ] = 'Bei SHOUTcast V2 Server tragen Sie die SID des Servers ein. In den meisten fällen ist dies: 1';
-$locale[ 'SP_infusion_settings_9' ] = 'Mountpoint';
-$locale[ 'SP_infusion_settings_9_desc' ] = 'Bei SHOUTcast V2, Icecast V2 und Icecast KH, tragen Sie den Mountpoint ein. In den meisten fällen ist dies: /stream';
-$locale[ 'SP_infusion_settings_10' ] = 'Cover Größe';
-$locale[ 'SP_infusion_settings_10_desc' ] = 'Wählem sie eine Cover Größe';
-$locale[ 'SP_infusion_settings_10_li_1' ] = 'Klein: 64px * 64px';
-$locale[ 'SP_infusion_settings_10_li_2' ] = 'Mittel: 300px * 300px';
-$locale[ 'SP_infusion_settings_10_li_3' ] = 'Groß: 640px * 640px';
-$locale[ 'SP_infusion_settings_11' ] = 'Benutzerdefinierte Breite';
-$locale[ 'SP_infusion_settings_11_desc' ] = 'Um Qualitätsverluste zu vermeiden, richten Sie sich bei der Benutzerdefinierten Breite immer an die Größe Ihrer oberen Auswahl.';
-$locale[ 'SP_infusion_settings_12' ] = 'Benutzerdefinierte Höhe';
-$locale[ 'SP_infusion_settings_12_desc' ] = 'Um Qualitätsverluste zu vermeiden, richten Sie sich bei der Benutzerdefinierten Höhe immer an die Größe Ihrer oberen Auswahl.';
-$locale[ 'SP_infusion_settings_13' ] = 'Passwort';
-$locale[ 'SP_infusion_settings_13_desc' ] = 'Bei SHOUTcast V1 Server ist das Admin Passwort des Streamservers nötig.';
-$locale[ 'SP_infusion_settings_14' ] = 'Panel Name';
-$locale[ 'SP_infusion_settings_14_desc' ] = 'Der Name des Cover Panels wie es auf der Frontseite erscheint.';
+$locale['sp_infusion_settings_head_1'] = 'Streambox: Einstellungen';
+$locale['sp_infusion_settings_head_1_desc'] = '<p>FÃ¼r Informationen zu den Stream-Boxen klicken Sie <a href="https://de.shoutcast-tools.com/streambox/" target="_blank" rel="noopener">hier</a>. Um die Stream-Boxen zu verwalten, klicken Sie <a href="https://www.shoutcast-tools.de/shoutcast/my/streambox/" target="_blank" rel="noopener">hier</a>.</p>';
+$locale['sp_infusion_settings_head_2'] = 'Tracklist: Einstellungen';
+$locale['sp_infusion_settings_head_2_desc'] = '<p>FÃ¼r Informationen zur Trackliste klicken Sie <a href="https://de.shoutcast-tools.com/history/" target="_blank" rel="noopener">hier</a>. Um die Tracklisten zu verwalten, klicken Sie <a href="https://www.shoutcast-tools.de/shoutcast/my/history/" target="_blank" rel="noopener">hier</a>.</p>';
+$locale['sp_infusion_settings_head_3'] = 'Streamserver-Einstellungen';
+$locale['sp_infusion_settings_head_3_desc'] = 'Geben Sie die Daten Ihres Stream-Servers ein, um zusÃ¤tzliche Funktionen in der Infusion freizuschalten. Der Streamserver ist fÃ¼r die Streambox und die Tracklist nicht erforderlich.';
+$locale['sp_infusion_settings_head_4'] = 'Streambox: Vorschau';
+$locale['sp_infusion_settings_head_5'] = 'Tracklist: Vorschau';
+$locale['sp_infusion_settings_head_6'] = 'Streambox: Anleitung';
+$locale['sp_infusion_settings_head_7'] = 'Tracklist: Anleitung';
+$locale['sp_infusion_settings_head_8'] = 'Cover: Einstellungen';
+$locale['sp_infusion_settings_head_8_desc'] = 'Die Shoutcast-Tools-Cover stehen allen Benutzern kostenlos zur VerfÃ¼gung.';
+$locale['sp_infusion_settings_head_9'] = 'Cover: Vorschau';
+$locale['sp_infusion_settings_head_10'] = 'Cover: Anleitung';
+$locale['sp_infusion_settings_saved'] = 'Die Einstellungen wurden erfolgreich gespeichert!';
+$locale['sp_infusion_settings_1'] = 'Panelname';
+$locale['sp_infusion_settings_1_desc'] = 'Der Name des Streambox-Panels, wie er auf der Vorderseite angezeigt wird.';
+$locale['sp_infusion_settings_2'] = 'Streambox-ID';
+$locale['sp_infusion_settings_2_desc'] = 'Die Streambox-ID';
+$locale['sp_infusion_settings_3'] = 'Panelname';
+$locale['sp_infusion_settings_3_desc'] = 'Der Name des Tracklist-Panels, wie er auf der Vorderseite angezeigt wird.';
+$locale['sp_infusion_settings_4'] = 'Tracklist-ID';
+$locale['sp_infusion_settings_4_desc'] = 'Die Tracklist-ID';
+$locale['sp_infusion_settings_5'] = 'Typ';
+$locale['sp_infusion_settings_5_desc'] = 'WÃ¤hlen Sie den Streamserver-Typ';
+$locale['sp_infusion_settings_6'] = 'IP-Adresse';
+$locale['sp_infusion_settings_6_desc'] = 'Geben Sie die IP-Adresse Ihres Stream-Servers ein.';
+$locale['sp_infusion_settings_7'] = 'Port';
+$locale['sp_infusion_settings_7_desc'] = 'Geben Sie den Port Ihres Stream-Servers ein.';
+$locale['sp_infusion_settings_8'] = 'SID';
+$locale['sp_infusion_settings_8_desc'] = 'FÃ¼r Shoutcast V2 Server geben Sie die SID des Servers ein. In den meisten FÃ¤llen ist dies: 1';
+$locale['sp_infusion_settings_9'] = 'Mountpoint';
+$locale['sp_infusion_settings_9_desc'] = 'FÃ¼r Shoutcast V2, Icecast V2 und Icecast KH geben Sie den Mountpoint ein. In den meisten FÃ¤llen ist dies: /stream';
+$locale['sp_infusion_settings_10'] = 'CovergrÃ¶ÃŸe';
+$locale['sp_infusion_settings_10_desc'] = 'WÃ¤hlen Sie eine CovergrÃ¶ÃŸe';
+$locale['sp_infusion_settings_10_li_1'] = 'Klein: 64px * 64px';
+$locale['sp_infusion_settings_10_li_2'] = 'Mittel: 300px * 300px';
+$locale['sp_infusion_settings_10_li_3'] = 'GroÃŸ: 640px * 640px';
+$locale['sp_infusion_settings_11'] = 'Benutzerdefinierte Breite';
+$locale['sp_infusion_settings_11_desc'] = 'Um QualitÃ¤tsverlust zu vermeiden, orientieren Sie sich immer an der GrÃ¶ÃŸe Ihrer obersten Auswahl fÃ¼r die benutzerdefinierte Breite.';
+$locale['sp_infusion_settings_12'] = 'Benutzerdefinierte HÃ¶he';
+$locale['sp_infusion_settings_12_desc'] = 'Um QualitÃ¤tsverlust zu vermeiden, orientieren Sie sich immer an der GrÃ¶ÃŸe Ihrer obersten Auswahl fÃ¼r die benutzerdefinierte HÃ¶he.';
+$locale['sp_infusion_settings_13'] = 'Passwort';
+$locale['sp_infusion_settings_13_desc'] = 'FÃ¼r Shoutcast V1 Server ist das Administratorpasswort des Stream-Servers erforderlich.';
+$locale['sp_infusion_settings_14'] = 'Panelname';
+$locale['sp_infusion_settings_14_desc'] = 'Der Name des Cover-Panels, wie er auf der Vorderseite angezeigt wird.';
 
-$locale[ 'SP_infusion_settings_streamserver_type_1' ] = 'SHOUTcast V1';
-$locale[ 'SP_infusion_settings_streamserver_type_2' ] = 'SHOUTcast V2';
-$locale[ 'SP_infusion_settings_streamserver_type_3' ] = 'Icecast V2';
-$locale[ 'SP_infusion_settings_streamserver_type_4' ] = 'Icecast KH';
+$locale['sp_infusion_settings_streamserver_type_1'] = 'Shoutcast V1';
+$locale['sp_infusion_settings_streamserver_type_2'] = 'Shoutcast V2';
+$locale['sp_infusion_settings_streamserver_type_3'] = 'Icecast V2';
+$locale['sp_infusion_settings_streamserver_type_4'] = 'Icecast KH';
 
-$locale[ 'SP_infusion_settings_cover_size_1' ] = 'Klein';
-$locale[ 'SP_infusion_settings_cover_size_2' ] = 'Mittel';
-$locale[ 'SP_infusion_settings_cover_size_3' ] = 'Groß';
-$locale[ 'SP_infusion_settings_cover_note_1' ] = 'Rufen Sie die PHP-Fusion Panels auf und aktvieren das Panel "ST: Cover". Anschließend verschieben Sie es an einen Ort Ihrer Wahl.';
-$locale[ 'SP_infusion_settings_cover_note_2' ] = 'Panels der SHOUTcast Tools Infusion dürfen unter keinen umständen gelöscht oder direkt in den Panel umbenannt werden.';
-$locale[ 'SP_infusion_settings_cover_note_3' ] = 'Uns unbekannte Cover werden beim erstmaligen Abruf eines Titels abgerufen und stehen fortan dauerhaft zur Verfügung.';
+$locale['sp_infusion_settings_cover_size_1'] = 'Klein';
+$locale['sp_infusion_settings_cover_size_2'] = 'Mittel';
+$locale['sp_infusion_settings_cover_size_3'] = 'GroÃŸ';
+$locale['sp_infusion_settings_cover_note_1'] = 'Gehen Sie zu den PHP-Fusion-Panels und aktualisieren Sie das Panel "ST: Cover". Verschieben Sie es dann an einen Ort Ihrer Wahl.';
+$locale['sp_infusion_settings_cover_note_2'] = 'Panels der Shoutcast-Tools-Infusion dÃ¼rfen unter keinen UmstÃ¤nden gelÃ¶scht oder direkt in das Panel umbenannt werden.';
+$locale['sp_infusion_settings_cover_note_3'] = 'Unbekannte Cover werden beim ersten Abrufen eines Titels abgerufen und stehen jetzt dauerhaft zur VerfÃ¼gung.';
 
-$locale[ 'SP_infusion_settings_tracklist_note_1' ] = 'Rufen Sie die PHP-Fusion Panels auf und aktvieren das Panel "ST: Tracklist". Anschließend verschieben Sie es an einen Ort Ihrer Wahl.';
-$locale[ 'SP_infusion_settings_tracklist_note_2' ] = 'Panels der SHOUTcast Tools Infusion dürfen unter keinen umständen gelöscht oder direkt in den Panel umbenannt werden.';
+$locale['sp_infusion_settings_tracklist_note_1'] = 'Gehen Sie zu den PHP-Fusion-Panels und aktualisieren Sie das Panel "ST: Tracklist". Verschieben Sie es dann an einen Ort Ihrer Wahl.';
+$locale['sp_infusion_settings_tracklist_note_2'] = 'Panels der Shoutcast-Tools-Infusion dÃ¼rfen unter keinen UmstÃ¤nden gelÃ¶scht oder direkt in das Panel umbenannt werden.';
 
-$locale[ 'SP_infusion_settings_streambox_note_1' ] = 'Rufen Sie die PHP-Fusion Panels auf und aktvieren das Panel "ST: Streambox". Anschließend verschieben Sie es an einen Ort Ihrer Wahl.';
-$locale[ 'SP_infusion_settings_streambox_note_2' ] = 'Panels der SHOUTcast Tools Infusion dürfen unter keinen umständen gelöscht oder direkt in den Panel umbenannt werden.';
+$locale['sp_infusion_settings_streambox_note_1'] = 'Gehen Sie zu den PHP-Fusion-Panels und aktualisieren Sie das "ST: Streambox"-Panel. Verschieben Sie es dann an einen Ort Ihrer Wahl.';
+$locale['sp_infusion_settings_streambox_note_2'] = 'Panels der Shoutcast-Tools-Infusion dÃ¼rfen unter keinen UmstÃ¤nden gelÃ¶scht oder direkt in das Panel umbenannt werden.';
 
-$locale[ 'SP_infusion_navigation_1' ] = 'Streamserver Einstellungen';
-$locale[ 'SP_infusion_navigation_2' ] = 'Streambox';
-$locale[ 'SP_infusion_navigation_3' ] = 'Tracklist / History';
-$locale[ 'SP_infusion_navigation_4' ] = 'Cover';
+$locale['sp_infusion_navigation_1'] = 'Streamserver-Einstellungen';
+$locale['sp_infusion_navigation_2'] = 'Streambox';
+$locale['sp_infusion_navigation_3'] = 'Tracklist / Verlauf';
+$locale['sp_infusion_navigation_4'] = 'Cover';
 
-$locale[ 'SP_infusion_shoutcastv1_notsupported' ] = 'SHOUTcast V1 wird in diesen Abschnitt nicht unterstützt.';
-$locale[ 'SP_infusion_icecast_notsupported' ] = 'Icecast V2 & Icecast KH werden in diesen Abschnitt nicht unterstützt.';
+$locale['sp_infusion_shoutcastv1_notsupported'] = 'Shoutcast V1 wird in diesem Abschnitt nicht unterstÃ¼tzt.';
+$locale['sp_infusion_icecast_notsupported'] = 'Icecast V2 & Icecast KH werden in diesem Abschnitt nicht unterstÃ¼tzt.';

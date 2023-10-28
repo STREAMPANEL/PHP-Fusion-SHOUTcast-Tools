@@ -5,16 +5,10 @@
 | https://www.php-fusion.co.uk/
 +--------------------------------------------------------+
 +--------------------------------------------------------+
-| This Infusion was Developed by
-| STREAMPANEL
+| This Infusion was Developed by STREAMPANEL
 | Copyright (C) scysys
 | https://www.streampanel.net/
-| 
-| Tested with PHP-Fusion 7.x only!
-| 
-| Developed with PHP 7.2
-| Make sure everything is working when you use another version of php.
-| 
+|
 | For Support inquires contact me under: support@shoutcast-tools.com
 | Support is in English and German only!
 +--------------------------------------------------------+
@@ -27,8 +21,9 @@
 | copyright header is strictly prohibited without
 | written permission from the original author(s).
 +--------------------------------------------------------*/
-if ( !defined( "IN_FUSION" ) ) {
-  die( "Access Denied" );
+
+if (!defined("IN_FUSION")) {
+    die("Access Denied");
 }
 
 /*
@@ -39,39 +34,31 @@ $inf_folder = "shoutcast_tools";
 /*
  * Require infusions_db.php
  */
-require INFUSIONS . "" . $inf_folder . "/infusion_db.php";
+require INFUSIONS . $inf_folder . "/infusion_db.php";
 
 /*
- * Check if a locale file is available that match the selected locale.
+ * Check if a locale file is available that matches the selected locale.
  */
-if ( file_exists( INFUSIONS . "" . $inf_folder . "/locale/" . LANGUAGE . ".php" ) ) {
-  // Load the locale file matching selection.
-  include INFUSIONS . "" . $inf_folder . "/locale/" . LANGUAGE . ".php";
-} else {
-  // Load the default locale file.
-  include INFUSIONS . "" . $inf_folder . "/locale/default.php";
-}
+$localeFile = file_exists(INFUSIONS . $inf_folder . "/locale/" . LANGUAGE . ".php")
+    ? INFUSIONS . $inf_folder . "/locale/" . LANGUAGE . ".php"
+    : INFUSIONS . $inf_folder . "/locale/default.php";
 
-/*
- * Get Cover settings
- */
-require_once INCLUDES . "infusions_include.php";
-$inf_settings = get_settings( "shoutcast_tools" );
+include $localeFile;
 
 /*
  * Get Cover settings
  */
 require_once INCLUDES . "infusions_include.php";
-$inf_settings = get_settings( "shoutcast_tools" );
+$inf_settings = get_settings("shoutcast_tools");
 
 /*
  * Cover
  */
-openside( $inf_settings[ 'cover_name' ] );
+openside($inf_settings['cover_name']);
 
 // Output can be changed here
 echo "<div align='center'>";
-require_once INFUSIONS . "" . $inf_folder . "/cover/get_cover.php";
+require_once INFUSIONS . $inf_folder . "/cover/get_cover.php";
 echo "</div>";
 
 closeside();

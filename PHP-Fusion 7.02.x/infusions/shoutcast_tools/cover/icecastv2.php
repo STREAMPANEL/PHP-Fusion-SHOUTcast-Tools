@@ -5,16 +5,10 @@
 | https://www.php-fusion.co.uk/
 +--------------------------------------------------------+
 +--------------------------------------------------------+
-| This Infusion was Developed by
-| STREAMPANEL
+| This Infusion was Developed by STREAMPANEL
 | Copyright (C) scysys
 | https://www.streampanel.net/
-| 
-| Tested with PHP-Fusion 7.x only!
-| 
-| Developed with PHP 7.2
-| Make sure everything is working when you use another version of php.
-| 
+|
 | For Support inquires contact me under: support@shoutcast-tools.com
 | Support is in English and German only!
 +--------------------------------------------------------+
@@ -30,75 +24,60 @@
 
 /**
  * Encode data to Base64URL
+ *
  * @param string $data
  * @return boolean|string
  */
-function base64url_encode( $data ) {
-  // First of all you should encode $data to Base64 string
-  $b64 = base64_encode( $data );
+function base64url_encode($data)
+{
+    // First, encode $data to Base64 string
+    $b64 = base64_encode($data);
 
-  // Make sure you get a valid result, otherwise, return FALSE, as the base64_encode() function do
-  if ( $b64 === false ) {
-    return false;
-  }
+    // Make sure you get a valid result, otherwise, return FALSE, as the base64_encode() function does
+    if ($b64 === false) {
+        return false;
+    }
 
-  // Convert Base64 to Base64URL by replacing “+” with “-” and “/” with “_”
-  $url = strtr( $b64, '+/', '-_' );
+    // Convert Base64 to Base64URL by replacing "+" with "-" and "/" with "_"
+    $url = strtr($b64, '+/', '-_');
 
-  // Remove padding character from the end of line and return the Base64URL result
-  return rtrim( $url, '=' );
+    // Remove padding character from the end of the line and return the Base64URL result
+    return rtrim($url, '=');
 }
 
 // Get Cover
-$server = $inf_settings[ 'streamserver_ipaddress' ] . ":" . $inf_settings[ 'streamserver_port' ];
+$server = $inf_settings['streamserver_ipaddress'] . ":" . $inf_settings['streamserver_port'];
 
 $url = "$server/status-json.xsl";
 
-//  Initiate curl
+// Initialize cURL
 $ch = curl_init();
-// Disable SSL verification
-curl_setopt( $ch, CURLOPT_SSL_VERIFYPEER, false );
-// Will return the response, if false it print the response
-curl_setopt( $ch, CURLOPT_RETURNTRANSFER, true );
-// Set the url
-curl_setopt( $ch, CURLOPT_URL, $url );
-// Execute
-$result = curl_exec( $ch );
-// Closing
-curl_close( $ch );
 
-$result = json_decode( $result, true );
-$stats = $result[ 'icestats' ];
-$source = $stats[ 'source' ];
+// Disable SSL verification (only for testing, consider enabling it in production)
+curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
 
-if ( $source[ 'title' ] == "" ) {
-  // Do nothing
-} else {
-  $actualSongtitle = $source[ 'title' ];
-  $actualSongtitle2 = strtolower( trim( $actualSongtitle ) );
-  echo "<!-- Cover--><img src='https://cover.streampanel.net/cover-api/sp/track.php?title=". urlencode($actualSongtitle2) ."&size=medium&urlonly=yes' width='" . $inf_settings[ 'cover_size_custom_width' ] . "' height='" . $inf_settings[ 'cover_size_custom_height' ] . "' alt='" . $actualSongtitle . "' /><!-- Generate Covers that we dont know at this time--><iframe src='https://www.shoutcast-tools.com/external/api/cover/icecastv2/$coverSize.php?url=http://" . $inf_settings[ 'streamserver_ipaddress' ] . ":" . $inf_settings[ 'streamserver_port' ] . "' width='0px' height='0px' style='display:none;'></iframe>";
-}
+// Set cURL to return the response
+curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 
-if ( $source[ 0 ][ 'title' ] == "" ) {
-  // Do nothing
-} else {
-  $actualSongtitle = $source[ 0 ][ 'title' ];
-  $actualSongtitle2 = strtolower( trim( $actualSongtitle ) );
-  echo "<!-- Cover--><img src='https://cover.streampanel.net/cover-api/sp/track.php?title=". urlencode($actualSongtitle2) ."&size=medium&urlonly=yes' width='" . $inf_settings[ 'cover_size_custom_width' ] . "' height='" . $inf_settings[ 'cover_size_custom_height' ] . "' alt='" . $actualSongtitle . "' /><!-- Generate Covers that we dont know at this time--><iframe src='https://www.shoutcast-tools.com/external/api/cover/icecastv2/$coverSize.php?url=http://" . $inf_settings[ 'streamserver_ipaddress' ] . ":" . $inf_settings[ 'streamserver_port' ] . "' width='0px' height='0px' style='display:none;'></iframe>";
-}
+// Set the URL to fetch
+curl_setopt($ch, CURLOPT_URL, $url);
 
-if ( $source[ 1 ][ 'title' ] == "" ) {
-  // Do nothing
-} else {
-  $actualSongtitle = $source[ 1 ][ 'title' ];
-  $actualSongtitle2 = strtolower( trim( $actualSongtitle ) );
-  echo "<!-- Cover--><img src='https://cover.streampanel.net/cover-api/sp/track.php?title=". urlencode($actualSongtitle2) ."&size=medium&urlonly=yes' width='" . $inf_settings[ 'cover_size_custom_width' ] . "' height='" . $inf_settings[ 'cover_size_custom_height' ] . "' alt='" . $actualSongtitle . "' /><!-- Generate Covers that we dont know at this time--><iframe src='https://www.shoutcast-tools.com/external/api/cover/icecastv2/$coverSize.php?url=http://" . $inf_settings[ 'streamserver_ipaddress' ] . ":" . $inf_settings[ 'streamserver_port' ] . "' width='0px' height='0px' style='display:none;'></iframe>";
-}
+// Execute cURL request
+$result = curl_exec($ch);
 
-if ( $source[ 2 ][ 'title' ] == "" ) {
-  // Do nothing
-} else {
-  $actualSongtitle = $source[ 2 ][ 'title' ];
-  $actualSongtitle2 = strtolower( trim( $actualSongtitle ) );
-  echo "<!-- Cover--><img src='https://cover.streampanel.net/cover-api/sp/track.php?title=". urlencode($actualSongtitle2) ."&size=medium&urlonly=yes' width='" . $inf_settings[ 'cover_size_custom_width' ] . "' height='" . $inf_settings[ 'cover_size_custom_height' ] . "' alt='" . $actualSongtitle . "' /><!-- Generate Covers that we dont know at this time--><iframe src='https://www.shoutcast-tools.com/external/api/cover/icecastv2/$coverSize.php?url=http://" . $inf_settings[ 'streamserver_ipaddress' ] . ":" . $inf_settings[ 'streamserver_port' ] . "' width='0px' height='0px' style='display:none;'></iframe>";
+// Close cURL
+curl_close($ch);
+
+$result = json_decode($result, true);
+$stats = $result['icestats'];
+$source = $stats['source'];
+
+for ($i = 0; $i < 3; $i++) {
+    if (empty($source[$i]['title'])) {
+        // Do nothing if the currently playing song title is empty
+    } else {
+        $actualSongtitle = $source[$i]['title'];
+        $actualSongtitle2 = strtolower(trim($actualSongtitle));
+        echo "<!-- Cover--><img src='https://cover.streampanel.net/cover-api/sp/track.php?title=" . urlencode($actualSongtitle2) . "&size=medium&urlonly=yes' width='" . $inf_settings['cover_size_custom_width'] . "' height='" . $inf_settings['cover_size_custom_height'] . "' alt='" . $actualSongtitle . "' /><!-- Generate Covers that we don't know at this time--><iframe src='https://www.shoutcast-tools.com/external/api/cover/icecastv2/$coverSize.php?url=http://" . $inf_settings['streamserver_ipaddress'] . ":" . $inf_settings['streamserver_port'] . "' width='0px' height='0px' style='display:none;'></iframe>";
+    }
 }

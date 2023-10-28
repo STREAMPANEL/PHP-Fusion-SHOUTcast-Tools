@@ -5,16 +5,10 @@
 | https://www.php-fusion.co.uk/
 +--------------------------------------------------------+
 +--------------------------------------------------------+
-| This Infusion was Developed by
-| STREAMPANEL
+| This Infusion was Developed by STREAMPANEL
 | Copyright (C) scysys
 | https://www.streampanel.net/
-| 
-| Tested with PHP-Fusion 7.x only!
-| 
-| Developed with PHP 7.2
-| Make sure everything is working when you use another version of php.
-| 
+|
 | For Support inquires contact me under: support@shoutcast-tools.com
 | Support is in English and German only!
 +--------------------------------------------------------+
@@ -27,57 +21,45 @@
 | copyright header is strictly prohibited without
 | written permission from the original author(s).
 +--------------------------------------------------------*/
-if ( !defined( "IN_FUSION" ) ) {
-  die( "Access Denied" );
+
+if (!defined("IN_FUSION")) {
+    die("Access Denied");
 }
 
-/*
- * The folder in which the infusion resides.
- */
+// Define the folder in which the infusion resides.
 $inf_folder = "shoutcast_tools";
 
-/*
- * Require infusions_db.php
- */
-require INFUSIONS . "" . $inf_folder . "/infusion_db.php";
+// Require infusion database file.
+require INFUSIONS . $inf_folder . "/infusion_db.php";
 
-/*
- * Check if a locale file is available that match the selected locale.
- */
-if ( file_exists( INFUSIONS . "" . $inf_folder . "/locale/" . LANGUAGE . ".php" ) ) {
-  // Load the locale file matching selection.
-  include INFUSIONS . "" . $inf_folder . "/locale/" . LANGUAGE . ".php";
+// Check if a locale file is available that matches the selected locale.
+if (file_exists(INFUSIONS . $inf_folder . "/locale/" . LANGUAGE . ".php")) {
+    // Load the locale file matching the selection.
+    include INFUSIONS . $inf_folder . "/locale/" . LANGUAGE . ".php";
 } else {
-  // Load the default locale file.
-  include INFUSIONS . "" . $inf_folder . "/locale/default.php";
+    // Load the default locale file.
+    include INFUSIONS . $inf_folder . "/locale/default.php";
 }
 
-/*
- * Get Cover settings
- */
+// Get Cover settings
 require_once INCLUDES . "infusions_include.php";
-$inf_settings = get_settings( "shoutcast_tools" );
+$inf_settings = get_settings($inf_folder);
 
 // Get Cover size
-if ( $inf_settings[ 'cover_size' ] == "1" ) {
-  $coverSize = "small";
-} elseif ( $inf_settings[ 'cover_size' ] == "2" ) {
-  $coverSize = "medium";
-} else {
-  $coverSize = "large";
+$coverSize = "large"; // Default to "large"
+if ($inf_settings['cover_size'] == "1") {
+    $coverSize = "small";
+} elseif ($inf_settings['cover_size'] == "2") {
+    $coverSize = "medium";
 }
 
-//// Check stream server type
-// SHOUTcast V2
-if ( $inf_settings[ 'streamserver_type' ] == "2" ) {
-  require_once INFUSIONS . "" . $inf_folder . "/cover/shoutcastv2.php";
-  // Icecast V2
-} elseif ( $inf_settings[ 'streamserver_type' ] == "3" ) {
-  require_once INFUSIONS . "" . $inf_folder . "/cover/icecastv2.php";
-  // Icecast KH
-} elseif ( $inf_settings[ 'streamserver_type' ] == "4" ) {
-  require_once INFUSIONS . "" . $inf_folder . "/cover/icecastkh.php";
-  // SHOUTcast V1
+// Check stream server type and include the appropriate cover script
+if ($inf_settings['streamserver_type'] == "2") {
+    require_once INFUSIONS . $inf_folder . "/cover/shoutcastv2.php";
+} elseif ($inf_settings['streamserver_type'] == "3") {
+    require_once INFUSIONS . $inf_folder . "/cover/icecastv2.php";
+} elseif ($inf_settings['streamserver_type'] == "4") {
+    require_once INFUSIONS . $inf_folder . "/cover/icecastkh.php";
 } else {
-  require_once INFUSIONS . "" . $inf_folder . "/cover/shoutcastv1.php";
+    require_once INFUSIONS . $inf_folder . "/cover/shoutcastv1.php";
 }
